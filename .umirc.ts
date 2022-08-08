@@ -1,6 +1,9 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
+  publicPath: '/xxxx/',
+  outputPath: 'dist/xxxx/',
+  copy: [{ from: 'dist/xxxx/index.html', to: 'dist' }],
   antd: {},
   access: {},
   model: {},
