@@ -6,5 +6,6 @@ export default (initialState: API.UserInfo) => {
   );
   return {
     canSeeAdmin,
+    table: false,
   };
 };

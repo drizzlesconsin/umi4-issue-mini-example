@@ -1,9 +1,6 @@
 import { defineConfig } from '@umijs/max';
 
 export default defineConfig({
-  publicPath: '/xxxx/',
-  outputPath: 'dist/xxxx/',
-  copy: [{ from: 'dist/xxxx/index.html', to: 'dist' }],
   antd: {},
   access: {},
   model: {},
@@ -35,9 +32,14 @@ export default defineConfig({
       component: './Access',
     },
     {
-      name: ' CRUD 示例',
+      name: 'CRUD 示例',
       path: '/table',
+      access: 'table',
       component: './Table',
+      // routes: [
+      //   { name: 'Table1', path: '/table/1' },
+      //   { name: 'Table2', path: '/table/2' },
+      // ],
     },
   ],
   npmClient: 'yarn',
